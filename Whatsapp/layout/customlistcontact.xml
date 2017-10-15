@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageViewContact"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helooo this is the required textview"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/textViewContact"
+            android:textAlignment="center"
+            />
+        <View
+            android:layout_width="235dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="2dp"
+            android:background="#95a5a6"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="25"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:id="@+id/textViewIconContact"/>
+        <View
+            android:layout_width="35dp"
+
+            android:layout_marginTop="28dp"
+            android:layout_height="2dp"
+            android:background="#95a5a6"></View>
+
+    </LinearLayout>
+
+</LinearLayout>

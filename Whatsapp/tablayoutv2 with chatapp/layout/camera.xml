@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context=".camera_open" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        &lt;!&ndash; Capture picture button &ndash;&gt;
+        <Button
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a Picture"
+            android:layout_marginBottom="10dp"/>
+
+        &lt;!&ndash; Record video button &ndash;&gt;
+        <Button
+            android:id="@+id/btnRecordVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record a Video" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Preview"
+            android:padding="10dp"
+            android:textSize="15dp"/>
+
+        &lt;!&ndash; To display picture taken &ndash;&gt;
+        <ImageView
+            android:id="@+id/image_show_here"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+
+        &lt;!&ndash; To preview video recorded &ndash;&gt;
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
+-->
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".MainActivity"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wel"
+        android:id="@+id/wallpaper"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:clickable="true"
+
+        android:id="@+id/image_show_here"/>
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoPreview"
+        android:visibility="invisible"/>
+    <ImageButton
+        android:id="@+id/btnCapturePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/camera1"
+        android:layout_marginLeft="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginBottom="16dp" />
+
+    <ImageButton
+        android:id="@+id/btnRecordVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="230dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/videocall"
+        android:layout_alignTop="@+id/btnCapturePicture"
+        android:layout_toEndOf="@+id/btnCapturePicture"
+        android:layout_marginStart="77dp" />
+
+
+
+<!--
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_show_here"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/btnCapturePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera1"
+            android:layout_marginLeft="80dp"
+          />
+
+        <ImageButton
+            android:id="@+id/btnRecordVideo"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="230dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/videocall" />
+    </FrameLayout>
+
+-->
+
+
+
+
+<!--
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image_show_here"
+
+
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnCapturePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:src="@drawable/camera1"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="50dp"/>
+
+            <ImageButton
+                android:id="@+id/btnRecordVideo"
+                android:layout_marginBottom="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="230dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/videocall" />
+        </FrameLayout>
+    </FrameLayout>-->
+
+
+
+
+
+
+</RelativeLayout>
