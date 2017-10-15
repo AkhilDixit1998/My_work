@@ -1,0 +1,10 @@
+@CHARSET "ISO-8859-1";
+.center
+{
+    position: absolute;
+    right: 40%;
+    top: 10%;
+}
+.space{
+    padding-bottom: 5px;
+}
